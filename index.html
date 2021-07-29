@@ -28,6 +28,16 @@
     </style>
     <!-- Custom styles for this template -->
     <link href="css/navbar-top.css" rel="stylesheet">
+    <!-- Include the library. -->
+<script
+src="https://unpkg.com/github-calendar@latest/dist/github-calendar.min.js">
+</script>
+
+<!-- Optionally, include the theme (if you don't want to struggle to write the CSS) -->
+<link
+rel="stylesheet"
+href="https://unpkg.com/github-calendar@latest/dist/github-calendar-responsive.css"
+/>
   </head>
   <body>
     
@@ -49,7 +59,7 @@
           <a class="nav-link active" aria-current="page" href="#oqueeufaco">O que eu faço</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#">GitHub</a>
+          <a class="nav-link active" aria-current="page" href="#github">GitHub</a>
         </li>
         <li class="nav-item">
           <a class="nav-link active" aria-current="page" href="#">Blog</a>
@@ -89,9 +99,32 @@
     <p class="list-unstyled">O Teste de APIs tem como objetivo revelar erros: inconsistências ou desvios do comportamento esperado. O teste contínuo também é muito importante para garantir que continue funcionando quando o público tiver acesso a ele.</p>
     <h6>Teste de Aplicativos Mobile</h6>
     <p class="list-unstyled">Teste de Aplicativos Mobile permite que você entregue um software melhor e ajuda seu aplicativo a ser bem-sucedido, testando sua funcionalidade, usabilidade e consistência, aumentando sua base de usuários.</p>
-    
+    <h6>Desenvolvimento de sites e aplicativos Web em PHP</h6>
+    <p class="list-unstyled">Basicamente, não há limite para o que podemos fazer com o desenvolvimento de aplicativos da Web em PHP. Se você estiver interessado em desempenho e velocidade usado por organizações globais em todos os setores, posso criar aplicativos altamente personalizáveis e flexíveis, que serão exibidos em qualquer computador ou dispositivo móvel.</p>
+    <h6>Modelagem de banco de dados PostgreSQL</h6>
+    <p class="list-unstyled">A modelagem ajuda a melhorar o desenvolvimento, implementação e manutenção de um sistema corporativo. A construção de um modelo de dados apresenta conceitos de negócios com documentação completa de atributos, definições, relacionamentos, etc.</p>
   </div>
+
+  <div class="bg-light p-5 rounded"><a name="github"></a>
+    <h5>GitHub</h5>
+    <br>
+    <h6>Visite o meu GitHub em <a href="https://github.com/douglascarlos-dev" target="_blank" class="link-primary">github.com/douglascarlos-dev</a></h6>
+    <br>
+  <!-- Prepare a container for your calendar. -->
+  <div class="calendar">
+    <!-- Loading stuff -->
+    Loading the data just for you.
+  </div>
+  
+  <script>
+    // or enable responsive functionality:
+    GitHubCalendar(".calendar", "douglascarlos-dev", { responsive: true });
+  </script>
+</div>
+
+
 </main>
+
 <script src="js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
