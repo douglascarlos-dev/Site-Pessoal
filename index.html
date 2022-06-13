@@ -46,6 +46,25 @@
 
     gtag('config', 'G-P352WN5S6F');
   </script>
+    <script type="text/javascript">
+      document.addEventListener("DOMContentLoaded", function(){
+        
+        window.addEventListener('scroll', function() {
+             
+          if (window.scrollY > 0) {
+            document.getElementById('navbar_top').classList.add('fixed-top');
+            // add padding top to show content behind navbar
+            navbar_height = document.querySelector('.navbar').offsetHeight;
+            document.body.style.paddingTop = navbar_height + 'px';
+          } else {
+             document.getElementById('navbar_top').classList.remove('fixed-top');
+             // remove padding top from body
+            document.body.style.paddingTop = '0';
+          } 
+        });
+      }); 
+      // DOMContentLoaded  end
+    </script>
   
   <script src="https://www.googleoptimize.com/optimize.js?id=OPT-KMG8LD2"></script>
   
@@ -53,7 +72,7 @@
 
 <body>
 
-  <nav class="navbar navbar-expand-md navbar-light bg-light mb-4">
+  <nav id="navbar_top" class="navbar navbar-expand-md navbar-light bg-light mb-4">
     <div class="container-fluid">
       <a class="navbar-brand" href="#">Douglas Carlos</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse"
