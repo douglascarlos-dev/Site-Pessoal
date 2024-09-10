@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description"
+        content="TCC realizado no curso de Sistemas de Informação no IFNMG - Pirapora">
+    <meta name="author" content="Douglas">
+    <title>Douglas Carlos | Desenvolvedor</title>
+    <link rel="icon" type="image/x-icon" href="https://douglascarlos.dev/img/favicon.ico">
+    <link rel="canonical" href="https://douglascarlos.dev/tcc-ifnmg-pirapora-aco-vrpfh/" />
+    <meta name="norton-safeweb-site-verification" content="PNPCDDCBP41S2ZMEU896TAEKIPYAFJCQI7-2R5QB0NKQVDZR68M3T49ZFX-G6GTTGQIA-M0I8MVWZ1BDUJG64BZ6KW3SOIS3VKFGSXG-8IB57LLJ93H0J-W0QP6ZLNY6" />
+    <meta property="og:image" content="https://douglascarlos.dev/img/dev.png" />
+    <meta property="og:title" content="Douglas Carlos | TCC" />
+    <meta property="og:description"
+        content="TCC realizado no curso de Sistemas de Informação no IFNMG - Pirapora" />
+    <meta name="robots" content="index, follow">
+    <meta name="keywords" content="IFNMG, Colônia de Formigas, ACO, Problema de Roteamento de Veículos com Frota Heterogênea, VRPFH.">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Satisfy&display=swap"
+        rel="stylesheet">
+    <style type="text/css">
+        .back-to-top {
+            background: #fff;
+            cursor: pointer;
+
+            position: fixed;
+            right: 1rem;
+            bottom: 1rem;
+
+            line-height: 0;
+
+            visibility: hidden;
+            opacity: 0;
+
+            transition: 0.3s;
+            transform: translateY(100%);
+        }
+
+        .back-to-top.show {
+            visibility: visible;
+            opacity: 1;
+            transform: translateY(0);
+        }
+    </style>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async loading="lazy" src="https://www.googletagmanager.com/gtag/js?id=G-P352WN5S6F"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-P352WN5S6F');
+    </script>
+    <script loading="lazy" src="https://www.googleoptimize.com/optimize.js?id=OPT-KMG8LD2"></script>
+    <script loading="lazy" type="text/javascript">
+        (function (c, l, a, r, i, t, y) {
+            c[a] = c[a] || function () { (c[a].q = c[a].q || []).push(arguments) };
+            t = l.createElement(r); t.async = 1; t.src = "https://www.clarity.ms/tag/" + i;
+            y = l.getElementsByTagName(r)[0]; y.parentNode.insertBefore(t, y);
+        })(window, document, "clarity", "script", "ellyiy8gna");
+    </script>
+    <script src="https://kit.fontawesome.com/14edfcae2f.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <a name="top"></a>
+    <div class="container py-3">
+        <header>
+            <div class="d-flex flex-column flex-md-row align-items-center pb-3 mb-4 border-bottom">
+                <a href="#" class="d-flex align-items-center link-body-emphasis text-decoration-none">
+                    <span class="fs-4">Douglas Carlos</span>
+                </a>
+
+                <nav class="d-inline-flex mt-2 mt-md-0 ms-md-auto">
+                    <a class="me-3 py-2 link-body-emphasis text-decoration-none" href="../#sobre">Sobre</a>
+                    <a class="me-3 py-2 link-body-emphasis text-decoration-none" href="../#habilidades">Habilidades</a>
+                    <a class="me-3 py-2 link-body-emphasis text-decoration-none" href="../#trabalhos">Trabalhos</a>
+                    <a class="me-3 py-2 link-body-emphasis text-decoration-none" href="./tcc-aco-vrpfh/">Meu TCC</a>
+                    <a class="py-2 link-body-emphasis text-decoration-none" href="../#contato">Contato</a>
+                </nav>
+            </div>
+
+
+        </header>
+
+        <!-- WELCOME -->
+        <a name="sobre"></a>
+        <section class="pt-4 pt-md-11">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-12 col-md-5 col-lg-6 order-md-2">
+
+                        <!-- Image -->
+                        <center><picture>
+                                    <source media="(max-width: 599px)" srcset="../img/tcc.png">
+                                    <source media="(min-width: 600px)" srcset="../img/tcc.png">
+                                    <img src="" class="img-fluid mw-md-150 mw-lg-130 mb-6 mb-md-0 aos-init aos-animate" alt="..." data-aos="fade-up" data-aos-delay="100" height="849" width="699">
+                                </picture></center>
+
+                    </div>
+                    <div class="col-12 col-md-7 col-lg-6 order-md-1 aos-init aos-animate" data-aos="fade-up">
+
+                        <!-- Heading -->
+                        <h1 class="display-4 text-center text-md-start">
+                            <strong><span class="text-primary">TCC:</span> Implementação de um sistema de roteamento de veículos com frota heterogênea utilizando otimização por <span class="text-primary">colônia de formigas</span>.</strong>
+                        </h1>
+
+                        <!-- Text -->
+                        <p class="lead text-center text-md-start mb-6 mb-lg-8">
+                            “Escreva algo que valha a pena ler ou faça algo que valha a pena escrever.” (Benjamin Franklin).
+                        </p>
+
+                    </div>
+                </div> <!-- / .row -->
+            </div> <!-- / .container -->
+        </section>
+
+        <br><br>
+        <!-- habilidades -->
+        <a name="habilidades"></a>
+        <section class="pt-8 pt-md-11 bg-gradient-light-white">
+            <div class="container">
+                <div class="col-12 col-md-12 order-md-2 aos-init aos-animate" data-aos="fade-left">
+
+                    <!-- Heading -->
+                    <h4>Neste trabalho foi aplicado a meta-heurística Colônia de Formigas (ACO) a um problema de Problema de Roteamento de Veículos com Frota Heterogênea (VRPFH). O
+processo consiste em alocar uma colônia de formigas que tem como papel encontrar a menor rota para percorrer um trajeto. Modificações foram realizadas para permitir a busca
+de múltiplas rotas e assim encontrar uma solução para realizar entregas de encomendas. A
+abordagem usada gerou soluções para o problema e se provou uma estratégia adequada.</h4>
+
+                    <!-- Text -->
+                    <p class="fs-lg text-body-secondary mb-6">
+                        <b>Palavras-chave:</b> Colônia de Formigas, ACO, Problema de Roteamento de Veículos com Frota Heterogênea, VRPFH.
+                    </p>
+                    <p><a class="btn btn-warning" href="../pdf/Monografia_Ifnmg_Douglas_Carlos.pdf" role="button"
+                        target="_blank">Veja Aqui (PDF)</a></p>
+
+                    
+
+                </div>
+            </div> <!-- / .container -->
+        </section>
+
+        
+        <br>
+
+        <!-- contato -->
+        <a name="contato"></a>
+        <section class="pt-8 pt-md-11 bg-gradient-light-white">
+            <div class="container">
+                <div class="col-12 col-md-12 order-md-2 aos-init aos-animate" data-aos="fade-left">
+
+                    <!-- Heading -->
+                    <h2>
+                        Fique à vontade para entrar em
+                        <span style="color:#EA101D; font-family: 'Satisfy', cursive;"><strong>contato</strong>.</span>
+                    </h2>
+
+                    <!-- Text -->
+                    <p class="fs-lg text-body-secondary mb-6">
+                        Deixando um <span style="color:#EA101D"><strong>Bit</strong></span>, pedir meu currículo ou ver
+                        se podemos construir algo
+                        incrível juntos? Eu adoraria ouvir você!
+                    </p>
+
+                    <!-- e-mail -->
+                    <p><i class="fa-solid fa-envelope" style="color: #EA101D;"></i> <a
+                            href="mailto:contato@douglascarlos.dev">contato@douglascarlos.dev</a></p>
+
+                    <!-- linkedin-->
+                    <p><i class="fa-brands fa-linkedin" style="color: #EA101D;"></i> <a
+                            href="https://www.linkedin.com/in/douglascarlos"
+                            target="_blank">https://www.linkedin.com/in/douglascarlos</a></p>
+                </div>
+            </div>
+        </section>
+        <br>
+        <center><a href="https://info.flagcounter.com/4k0s">
+                <script data-pagespeed-no-defer>//<![CDATA[
+                    (function () { for (var g = "function" == typeof Object.defineProperties ? Object.defineProperty : function (b, c, a) { if (a.get || a.set) throw new TypeError("ES3 does not support getters and setters."); b != Array.prototype && b != Object.prototype && (b[c] = a.value) }, h = "undefined" != typeof window && window === this ? this : "undefined" != typeof global && null != global ? global : this, k = ["String", "prototype", "repeat"], l = 0; l < k.length - 1; l++) { var m = k[l]; m in h || (h[m] = {}); h = h[m] } var n = k[k.length - 1], p = h[n], q = p ? p : function (b) { var c; if (null == this) throw new TypeError("The 'this' value for String.prototype.repeat must not be null or undefined"); c = this + ""; if (0 > b || 1342177279 < b) throw new RangeError("Invalid count value"); b |= 0; for (var a = ""; b;)if (b & 1 && (a += c), b >>>= 1) c += c; return a }; q != p && null != q && g(h, n, { configurable: !0, writable: !0, value: q }); var t = this; function u(b, c) { var a = b.split("."), d = t; a[0] in d || !d.execScript || d.execScript("var " + a[0]); for (var e; a.length && (e = a.shift());)a.length || void 0 === c ? d[e] ? d = d[e] : d = d[e] = {} : d[e] = c }; function v(b) { var c = b.length; if (0 < c) { for (var a = Array(c), d = 0; d < c; d++)a[d] = b[d]; return a } return [] }; function w(b) { var c = window; if (c.addEventListener) c.addEventListener("load", b, !1); else if (c.attachEvent) c.attachEvent("onload", b); else { var a = c.onload; c.onload = function () { b.call(this); a && a.call(this) } } }; var x; function y(b, c, a, d, e) { this.h = b; this.j = c; this.l = a; this.f = e; this.g = { height: window.innerHeight || document.documentElement.clientHeight || document.body.clientHeight, width: window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth }; this.i = d; this.b = {}; this.a = []; this.c = {} } function z(b, c) { var a, d, e = c.getAttribute("data-pagespeed-url-hash"); if (a = e && !(e in b.c)) if (0 >= c.offsetWidth && 0 >= c.offsetHeight) a = !1; else { d = c.getBoundingClientRect(); var f = document.body; a = d.top + ("pageYOffset" in window ? window.pageYOffset : (document.documentElement || f.parentNode || f).scrollTop); d = d.left + ("pageXOffset" in window ? window.pageXOffset : (document.documentElement || f.parentNode || f).scrollLeft); f = a.toString() + "," + d; b.b.hasOwnProperty(f) ? a = !1 : (b.b[f] = !0, a = a <= b.g.height && d <= b.g.width) } a && (b.a.push(e), b.c[e] = !0) } y.prototype.checkImageForCriticality = function (b) { b.getBoundingClientRect && z(this, b) }; u("pagespeed.CriticalImages.checkImageForCriticality", function (b) { x.checkImageForCriticality(b) }); u("pagespeed.CriticalImages.checkCriticalImages", function () { A(x) }); function A(b) { b.b = {}; for (var c = ["IMG", "INPUT"], a = [], d = 0; d < c.length; ++d)a = a.concat(v(document.getElementsByTagName(c[d]))); if (a.length && a[0].getBoundingClientRect) { for (d = 0; c = a[d]; ++d)z(b, c); a = "oh=" + b.l; b.f && (a += "&n=" + b.f); if (c = !!b.a.length) for (a += "&ci=" + encodeURIComponent(b.a[0]), d = 1; d < b.a.length; ++d) { var e = "," + encodeURIComponent(b.a[d]); 131072 >= a.length + e.length && (a += e) } b.i && (e = "&rd=" + encodeURIComponent(JSON.stringify(B())), 131072 >= a.length + e.length && (a += e), c = !0); C = a; if (c) { d = b.h; b = b.j; var f; if (window.XMLHttpRequest) f = new XMLHttpRequest; else if (window.ActiveXObject) try { f = new ActiveXObject("Msxml2.XMLHTTP") } catch (r) { try { f = new ActiveXObject("Microsoft.XMLHTTP") } catch (D) { } } f && (f.open("POST", d + (-1 == d.indexOf("?") ? "?" : "&") + "url=" + encodeURIComponent(b)), f.setRequestHeader("Content-Type", "application/x-www-form-urlencoded"), f.send(a)) } } } function B() { var b = {}, c; c = document.getElementsByTagName("IMG"); if (!c.length) return {}; var a = c[0]; if (!("naturalWidth" in a && "naturalHeight" in a)) return {}; for (var d = 0; a = c[d]; ++d) { var e = a.getAttribute("data-pagespeed-url-hash"); e && (!(e in b) && 0 < a.width && 0 < a.height && 0 < a.naturalWidth && 0 < a.naturalHeight || e in b && a.width >= b[e].o && a.height >= b[e].m) && (b[e] = { rw: a.width, rh: a.height, ow: a.naturalWidth, oh: a.naturalHeight }) } return b } var C = ""; u("pagespeed.CriticalImages.getBeaconData", function () { return C }); u("pagespeed.CriticalImages.Run", function (b, c, a, d, e, f) { var r = new y(b, c, a, e, f); x = r; d && w(function () { window.setTimeout(function () { A(r) }, 0) }) }); })(); pagespeed.CriticalImages.Run('/mod_pagespeed_beacon', 'https://douglascarlos.dev/', 'dWwAOoYA9u', true, false, 'C8RGEsOR1c8');
+                    //]]></script><img loading="lazy" height="119" width="162"
+                    src="https://s01.flagcounter.com/count2/4k0s/bg_FFFFFF/txt_000000/border_CCCCCC/columns_2/maxflags_10/viewers_3/labels_0/pageviews_0/flags_0/percent_0/"
+                    alt="Flag Counter" border="0" data-pagespeed-url-hash="3056947580"
+                    onload="pagespeed.CriticalImages.checkImageForCriticality(this);">
+            </a></center><br>
+
+
+        <a class="back-to-top" href="#top"><i class="fa-solid fa-chevron-up"></i></a>
+        <footer class="pt-3 my-md-2 border-top">
+            <div class="row">
+                <div class="col-12 col-md">
+                    <small class="d-block mb-3 text-muted text-center">© 2024<br><a
+                            href="https://github.com/douglascarlos-dev" target="_blank"><img loading="lazy" src="../img/logo.svg"
+                                alt="Logo douglascarlos.dev" height="35" width="50"></a></small>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <script type="text/javascript">
+        const backToTopButton = document.querySelector('.back-to-top')
+
+        const backToTop = () => {
+            if (window.scrollY >= 100) {
+                backToTopButton.classList.add('show')
+            } else {
+                backToTopButton.classList.remove('show')
+            }
+        }
+
+        window.addEventListener('scroll', function () {
+            backToTop()
+        })
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
