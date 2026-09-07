@@ -1,0 +1,22 @@
+# Douglas Carlos | Desenvolvedor Full Stack
+
+> Sou um desenvolvedor Full Stack baseado em Uberaba, Minas Gerais - Brasil, focado em criar soluções inovadoras para problemas complexos.
+
+## Tecnologias e Habilidades
+
+- **Backend:** PHP (Orientado a Objetos, MVC), C#, API REST.
+- **Frontend:** HTML, CSS, Angular, Vanilla JS, Bootstrap, jQuery, Figma.
+- **Banco de Dados:** SQL, PostgreSQL.
+- **DevOps & Infraestrutura:** Ubuntu Server, Docker, GitHub, CDN.
+
+## Portfólio de Projetos
+
+- **Clientes Gestor:** Software Web para cadastro de clientes usando PHP OO, MVC, Postgresql, CAPTCHA, geração de PDF e API de CEP/Endereço.
+- **Acervo Suíte:** Software de gerenciamento de ativos digitais (DAM) com CDN, relatórios em planilha e encurtador de URL.
+- **Fim do almoço:** Aplicativo Web para calcular o horário de almoço desenvolvido com HTML, CSS, JavaScript, jQuery e Bootstrap (possui Dark Mode).
+- **Ficha de Inscrição:** Formulário de Inscrição integrado com Angular, PHP e Email Delivery Platform.
+
+## Contato e Redes Sociais
+
+- **E-mail:** contato@douglascarlos.dev
+- **LinkedIn:** https://www.linkedin.com/in/douglascarlos
