@@ -40,6 +40,10 @@ jobs:
           ssh ${{ secrets.SSH_HOST }} << 'EOF'
             cd /var/www/html/douglas
             git pull origin main
+
+            # Apaga arquivos que não precisam ficar no servidor web
+            rm -f README.md LICENSE .gitignore
+            
             if [ -f "composer.json" ]; then
                 composer install --no-dev --optimize-autoloader
             fi
