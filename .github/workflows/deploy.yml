@@ -3,26 +3,32 @@ name: Deploy Automático via Cloudflare Tunnel
 on:
   push:
     branches:
-      - main # Ajuste para 'master' se for o nome da sua branch principal
+      - main # Ajuste para 'master' se sua branch principal tiver esse nome
 
 jobs:
   deploy:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Instalar cloudflared na VM do GitHub
+      - name: Instalar e configurar cloudflared para Proxy SSH
         run: |
+          # 1. Instalar o cloudflared
           curl -L --output cloudflared.deb https://github.com/cloudflare/cloudflared/releases/latest/download/cloudflared-linux-amd64.deb
           sudo dpkg -i cloudflared.deb
           rm cloudflared.deb
 
-      - name: Executar deploy no Orange Pi via SSH + Cloudflare
+          # 2. Configurar o ProxyCommand no SSH config da VM
+          mkdir -p ~/.ssh
+          echo "Host ${{ secrets.SSH_HOST }}" >> ~/.ssh/config
+          echo "  ProxyCommand cloudflared access ssh --hostname %h" >> ~/.ssh/config
+          chmod 600 ~/.ssh/config
+
+      - name: Executar deploy no Orange Pi via SSH
         uses: appleboy/ssh-action@v1.0.3
         with:
           host: ${{ secrets.SSH_HOST }}
           username: ${{ secrets.SSH_USER }}
           key: ${{ secrets.SSH_KEY }}
-          proxy_cmd: "cloudflared access ssh --hostname %h"
           script: |
             cd /var/www/html/douglas
             git pull origin main
